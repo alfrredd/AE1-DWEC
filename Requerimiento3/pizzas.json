@@ -1,0 +1,15 @@
+{
+    "tamanos": 
+    [
+        {"id": "pequena", "nombre": "Pequeña", "precio": 5},
+        {"id": "mediana", "nombre": "Mediana", "precio": 10},
+        {"id": "grande", "nombre": "Grande", "precio": 15}
+    ],
+    "ingredientes":
+     [
+        {"id": "jamon", "ingrediente": "Jamón", "precio": 1},
+        {"id": "bacon", "ingrediente": "Bacon", "precio": 1},
+        {"id": "champi", "ingrediente": "Champiñón", "precio": 1},
+        {"id": "pina", "ingrediente": "Piña", "precio": 1}
+    ]
+}
