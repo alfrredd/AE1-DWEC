@@ -8,18 +8,40 @@
 
 </head>
 <body>
-    <form>
+    <button onclick="cargarDatosPizzeria(event)">Recargar información</button>
+    <form onsubmit="procesarPedido(event)">
+        <h1>Pizzería DAW</h1>
+        <h2>Datos de contacto:</h2>
+        <label for="fname">Nombre y apellidos:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <span class="error"></span><br>
+        
+        <label for="fdir">Dirección: </label><br>
+        <input type="text" id="fdir" name="fdir"><br>
+        <span class="error"></span><br>
+        
+        <label for="ftel">Teléfono de contacto: </label><br>
+        <input type="tel" id="ftel" name="ftel"><br>
+        <span class="error"></span><br>
+        
+        <label for="femail">Email: </label><br>
+        <input type="email" id="femail" name="femail"><br>
+        <span class="error"></span><br>
+        
+        <h2>Tamaño de la pizza:</h2>
+        <select id="tamanos-pizza"></select>
+        
+        <h2>Ingredientes a añadir:</h2>
+        <div id="contenedor-ingredientes">
+        </div>
 
-    <h2>Tamaños de Pizza</h2>
-    <select id="tamanos-pizza"></select>
-
-    <div id="contenedor-ingredientes">
-    </div>
-
-    <h2>Finalizar Pedido</h2>
-    <button id="btnSubmit" onclick="procesarPedido(event)">Confirmar Pedido</button>
-
-</form>
+        <h2>Finalizar pedido</h2>
+        
+        <input type="submit" id="btnSubmit" value="confirmar pedido">
+        
+        <div id = "contenedorFinal"></div>
+        
+        </form>
     
 </body>
 </html>
