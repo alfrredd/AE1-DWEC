@@ -1,3 +1,3 @@
-# AE1-DWEC
+# AE2-DWEC
 
-Primera tarea del módulo DWEC - Grupo 15
+Primera y segunda tarea del módulo DWEC - Grupo 15
