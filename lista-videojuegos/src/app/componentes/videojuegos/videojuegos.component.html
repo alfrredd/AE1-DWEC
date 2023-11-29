@@ -1,0 +1,12 @@
+<div *ngIf="usuarioActual">
+<p class = "dato"><span class="etiqueta">Usuario: </span>{{usuarioActual.usuario}}</p>
+<p class = "dato"><span class="etiqueta">Contraseña: </span>{{usuarioActual.contrasena}}</p>
+</div>
+
+<table>
+<tr *ngFor="let videojuego of listaVideojuegos">
+    <td>{{videojuego.id}}</td>
+    <td><a [routerLink]="['/videojuego', videojuego.id]">{{ videojuego.titulo }}</a></td>
+<td>Valoración: {{videojuego.valoracionMedia}}</td>
+</tr>
+</table>

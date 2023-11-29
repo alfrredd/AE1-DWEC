@@ -1,0 +1,68 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para las cabeceras de la tabla */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para las filas de la tabla */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para los enlaces */
+  a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para las imágenes */
+  img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Agrega más estilos según tus preferencias */
+  
+  /* Estilos para los datos del usuario */
+.datos-usuario {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.dato {
+    font-family: 'Courier New', monospace; /* Estilo de fuente para mejorar la legibilidad */
+    color: #333;
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+/* Continúa con el resto de tus estilos... */

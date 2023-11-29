@@ -1,0 +1,13 @@
+<!-- detalle.component.html -->
+<div class="detalle-container" *ngIf="videojuego; else noVideojuego">
+  <h2>{{ videojuego.titulo }}</h2>
+  <p><strong>Compañía:</strong> {{ videojuego.compania }}</p>
+  <p><strong>Valoración:</strong> {{ videojuego.valoracionMedia }}</p>
+  <img [src]="videojuego.imagen" alt="{{ videojuego.titulo }}">
+</div>
+
+<ng-template #noVideojuego>
+  <p class="no-videojuego">Videojuego no encontrado.</p>
+</ng-template>
+
+<a class="btn-volver" [routerLink]="['/videojuegos']">Volver</a>

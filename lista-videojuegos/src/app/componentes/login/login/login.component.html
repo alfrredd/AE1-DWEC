@@ -1,0 +1,22 @@
+<div class = 'login-container'>
+    <div class = 'form-group'>
+    <form (ngSubmit) = "onLogin()">
+    <label for = "usuario">Introduce el usuario</label>
+    <input type = "text" id="usuario" [(ngModel)]="usuario" name = "usuario" required>
+
+
+     <br>
+
+     <div class = 'form-group password group'>
+    <label for = "contrasena">Introduce la contraseña</label>
+    <input [type] = "mostrarContrasena ? 'text' : 'password' " id="contrasena" name="contrasena" [(ngModel)] = "contrasena" required>
+    <button type="button" class="toggle-password" (click)="mostrarContrasena = !mostrarContrasena">
+    <img [src] = "mostrarContrasena ? 'assets/images/ojo-abierto.png' : 'assets/images/ojo-cerrado.jpeg'"/>
+    </button>
+    </div>
+
+    <button type = "submit">Iniciar sesión </button>
+
+
+<p *ngIf="loginError" style="color : red">Usuario o contraseña incorrectos</p>
+
