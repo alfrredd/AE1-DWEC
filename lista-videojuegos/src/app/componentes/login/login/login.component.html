@@ -7,12 +7,14 @@
 
      <br>
 
-     <div class = 'form-group password group'>
-    <label for = "contrasena">Introduce la contraseña</label>
-    <input [type] = "mostrarContrasena ? 'text' : 'password' " id="contrasena" name="contrasena" [(ngModel)] = "contrasena" required>
-    <button type="button" class="toggle-password" (click)="mostrarContrasena = !mostrarContrasena">
-    <img [src] = "mostrarContrasena ? 'assets/images/ojo-abierto.png' : 'assets/images/ojo-cerrado.jpeg'"/>
-    </button>
+     <div class='form-group password-group'>
+        <label for="contrasena">Introduce la contraseña</label>
+        <div class="password-input-container">
+            <input [type]="mostrarContrasena ? 'text' : 'password'" id="contrasena" name="contrasena" [(ngModel)]="contrasena" required>
+            <button type="button" class="toggle-password" (click)="mostrarContrasena = !mostrarContrasena">
+                <img [src]="mostrarContrasena ? 'assets/images/ojo-abierto.png' : 'assets/images/ojo-cerrado.jpeg'" alt="Toggle Password">
+            </button>
+        </div>
     </div>
 
     <button type = "submit">Iniciar sesión </button>

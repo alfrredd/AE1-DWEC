@@ -24,9 +24,8 @@
   /* Estilos para los campos de entrada */
   input[type="text"],
   input[type="password"] {
-      width: calc(100% - 40px); /* Reduce el ancho para dejar espacio para el botón */
-      padding: 8px;
-      padding-right: 40px; /* Espacio adicional a la derecha para el botón */
+      width: 100%;
+      padding: 8px; 
       border: 1px solid #ddd;
       border-radius: 4px;
       box-sizing: border-box;
@@ -60,27 +59,31 @@
     text-align: center;
   }
   
-  /* Puedes añadir más estilos según tus preferencias */
-  
-  .password-group {
-    position: relative;
+  .password-input-container {
     display: flex;
     align-items: center;
 }
 
 .toggle-password {
-    position: absolute;
-    right: 10px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin-left: -30px;
+}
+
+.toggle-password:hover {
+  background-color: transparent
 }
 
 .toggle-password img {
-    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    
 }
