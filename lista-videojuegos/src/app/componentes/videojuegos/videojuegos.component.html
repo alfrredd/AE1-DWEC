@@ -1,6 +1,6 @@
 <div *ngIf="usuarioActual">
-<p class = "dato"><span class="etiqueta">Usuario: </span>{{usuarioActual.usuario}}</p>
-<p class = "dato"><span class="etiqueta">Contraseña: </span>{{usuarioActual.contrasena}}</p>
+    <p class = "dato"><span class="etiqueta">Usuario: </span>{{usuarioActual.usuario}}</p>
+    <p class = "dato"><span class="etiqueta">Contraseña: </span>{{usuarioActual.contrasena}}</p>
 </div>
 
 <table>
@@ -10,3 +10,7 @@
 <td>Valoración: {{videojuego.valoracionMedia}}</td>
 </tr>
 </table>
+
+<footer>
+    <p><a (click)="openPopup()">Sobre nosotros</a></p>
+</footer>
