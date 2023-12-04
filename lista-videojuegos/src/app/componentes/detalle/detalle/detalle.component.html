@@ -3,7 +3,10 @@
   <h2>{{ videojuego.titulo }}</h2>
   <p><strong>Compañía:</strong> {{ videojuego.compania }}</p>
   <p><strong>Valoración:</strong> {{ videojuego.valoracionMedia }}</p>
-  <img [src]="videojuego.imagen" alt="{{ videojuego.titulo }}">
+  <div class="img-descripcion">
+    <img [src]="videojuego.imagen" alt="{{ videojuego.titulo }}">
+    <p><strong>Descripción:</strong> {{ videojuego.descripcion }}</p>
+  </div>
 </div>
 
 <ng-template #noVideojuego>
